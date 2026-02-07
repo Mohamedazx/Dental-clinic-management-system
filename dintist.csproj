@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A19F82D3-32AD-4130-8938-5DA40A77DCEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dintist</RootNamespace>
+    <AssemblyName>dintist</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>F:\dintist\dintist\app publishing\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>DR-Omran-Dentist</ProductName>
+    <PublisherName>Hosny</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>6.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Users\user\Desktop\New folder %282%29\New folder\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>obj\Release\app.publish\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>63BFC6C08AEA494882A9CC1B26F930C644B80564</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>dintist_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>dintist.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hol.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=1.1.25515.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DG.AdvancedDataGridView.1.1.25515.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>.\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Renci.SshNet, Version=2020.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.23\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dxl\Dxl.cs" />
+    <Compile Include="forms\ALL_state.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ALL_state.Designer.cs">
+      <DependentUpon>ALL_state.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\form_backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\form_backup.Designer.cs">
+      <DependentUpon>form_backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\income.Designer.cs">
+      <DependentUpon>income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\New salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\New salary.Designer.cs">
+      <DependentUpon>New salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\patients.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="forms\patients.Designer.cs">
+      <DependentUpon>patients.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="forms\spending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\spending.Designer.cs">
+      <DependentUpon>spending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\New Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\New Bill.Designer.cs">
+      <DependentUpon>New Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\New Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\New Staff.Designer.cs">
+      <DependentUpon>New Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\new state.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\new state.Designer.cs">
+      <DependentUpon>new state.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\patient img.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\patient img.Designer.cs">
+      <DependentUpon>patient img.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Patients Manegment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Patients Manegment.Designer.cs">
+      <DependentUpon>Patients Manegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Staff mangment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Staff mangment.Designer.cs">
+      <DependentUpon>Staff mangment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\logins.cs" />
+    <Compile Include="PL\Pati.cs" />
+    <Compile Include="PL\Salarys.cs" />
+    <Compile Include="PL\spendings.cs" />
+    <Compile Include="PL\Staff.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="forms\ALL_state.resx">
+      <DependentUpon>ALL_state.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\form_backup.resx">
+      <DependentUpon>form_backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\income.resx">
+      <DependentUpon>income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\New salary.resx">
+      <DependentUpon>New salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\New Staff.resx">
+      <DependentUpon>New Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\new state.resx">
+      <DependentUpon>new state.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\patient img.resx">
+      <DependentUpon>patient img.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Patients Manegment.resx">
+      <DependentUpon>Patients Manegment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\New Bill.resx">
+      <DependentUpon>New Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\patients.resx">
+      <DependentUpon>patients.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\spending.resx">
+      <DependentUpon>spending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Staff mangment.resx">
+      <DependentUpon>Staff mangment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_phone.svg" />
+    <None Include="images\143297542_2874206689573108_4568360954813699750_n.jpg" />
+    <None Include="images\143504863_1046209805865860_2263449011769317390_n.jpg" />
+    <None Include="images\143518143_741585956757824_7990274730515185861_n.jpg" />
+    <None Include="images\144418949_253356792980830_3305747997320657455_n.jpg" />
+    <None Include="images\143854024_719323262114873_5832052371564416048_n.jpg" />
+    <None Include="images\144060663_3679982875417384_7387492355051774389_n.jpg" />
+    <None Include="images\143858392_757201718551453_9071451982048775963_n.jpg" />
+    <None Include="images\144505285_3010781442486044_976651149893281021_n.jpg" />
+    <None Include="images\144567242_411484566626109_5685526036185798882_n.jpg" />
+    <None Include="images\144494848_1312957829080949_4806875199002182874_n.jpg" />
+    <None Include="images\145243631_1032141470610572_171678107259927467_n.jpg" />
+    <Content Include="hol.ico" />
+    <Content Include="images\150998911_245718687126303_6141568511419560939_n.png" />
+    <Content Include="images\backup.ico" />
+    <Content Include="images\backup.png" />
+    <Content Include="images\download %281%29.jpg" />
+    <Content Include="images\download %282%29.jpg" />
+    <None Include="Resources\143323473_416213666313468_9066148641424549403_n1.jpg" />
+    <None Include="Resources\143323473_416213666313468_9066148641424549403_n.jpg" />
+    <None Include="Resources\143422032_375030930509236_5900630387490630200_n.jpg" />
+    <None Include="Resources\gettyimages-477581446-2048x2048.jpg" />
+    <None Include="Resources\images.png" />
+    <None Include="images\images %281%29.png" />
+    <None Include="images\images %282%29.png" />
+    <None Include="images\images %283%29.png" />
+    <None Include="images\images %284%29.png" />
+    <None Include="images\download.png" />
+    <None Include="images\fb11.jpg" />
+    <None Include="images\fb1.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\images.png" />
+    <Content Include="images\img_1501763761_662.jpg" />
+    <None Include="images\WhatsApp Image 2021-03-20 at 11.38.46 PM.jpeg" />
+    <None Include="images\Untitled-1.jpg" />
+    <None Include="images\Untitled-2.jpg" />
+    <None Include="images\Untitled-3.jpg" />
+    <None Include="images\Untitled-4.jpg" />
+    <None Include="images\Untitled-5.jpg" />
+    <None Include="images\Untitled-6.jpg" />
+    <None Include="images\Untitled-7.jpg" />
+    <None Include="images\wats1.jpg" />
+    <None Include="images\watsd-1.jpg" />
+    <None Include="images\in-1.jpg" />
+    <None Include="images\int.jpg" />
+    <Content Include="images\medical-invoice.png" />
+    <Content Include="images\salary.png" />
+    <Content Include="images\اى.png" />
+    <Content Include="images\عيادة-اسنان.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reporting\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
